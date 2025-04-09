@@ -1,13 +1,7 @@
 import os
-from pyrogram import Client, filters
-from pyrogram.types import Message
 from pytgcalls import PyTgCalls
-from pytgcalls.types import Update
-from pytgcalls.types.input_stream import InputStream, AudioPiped
+from pytgcalls.types.input_stream import AudioPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio
-
-import yt_dlp
-import asyncio
 
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
