@@ -41,10 +41,10 @@ async def play(_, message: Message):
     if len(queue[chat_id]) == 1:
         await pytgcalls.join_group_call(
             chat_id,
-            InputStream(
-                AudioPiped(audio_file, HighQualityAudio())
+            AudioPiped(audio_file, HighQualityAudio())
+            
             )
-        )
+    
         await msg.edit("Playing now!")
     else:
         await msg.edit("Added to queue.")
